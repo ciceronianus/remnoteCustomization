@@ -1,0 +1,33 @@
+/* Changes colors of the items in the left sidebar */
+
+a[href="/notes"][data-testid="documents_link"] 
+> div > div:nth-child(1) > svg > path
+
+{
+fill: red;    
+
+}
+
+a[href="/notes"][data-testid="documents_link"] 
++ div
+> div:nth-child(1) > svg > path
+{
+fill: #aa8718;    
+}
+
+
+a.block[href="/flashcards"] 
+> div > div:nth-child(1) > svg > path
+
+{
+fill: #1ba447;    
+
+}
+
+a.block[href="/flashcards"] + a
+> div > div:nth-child(1) > svg > path
+
+{
+fill: #ce67ff;    
+
+}
